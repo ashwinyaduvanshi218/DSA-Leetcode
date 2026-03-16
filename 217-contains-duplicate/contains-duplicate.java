@@ -1,4 +1,4 @@
-// try solving with hash map for optimal solution 
+// try solving with hash set for optimal solution 
 /*class Solution {
     public boolean containsDuplicate(int[] nums) {
 
@@ -27,21 +27,15 @@ import java.util.HashSet;
 class Solution {
     public boolean containsDuplicate(int[] nums) {
 
-        int n = nums.length;
-        if(n == 1) return false;
-
         HashSet<Integer> set = new HashSet<>();
 
-        int start = 0;
+        for(int num : nums){
 
-        while(start < n){
-
-            if(set.contains(nums[start])){
+            if(set.contains(num)){
                 return true;
             }
 
-            set.add(nums[start]);
-            start++;
+            set.add(num);
         }
 
         return false;
