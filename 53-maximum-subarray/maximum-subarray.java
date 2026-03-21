@@ -18,3 +18,10 @@ class Solution {
         return q;
     }
 }
+/* for ( int i = 0 ; i < n ; i++){
+    currSum += num[i];
+    maxSum= Math.max(maxSum , currSum);
+    if(currSum<0){
+        
+    }
+}*/
