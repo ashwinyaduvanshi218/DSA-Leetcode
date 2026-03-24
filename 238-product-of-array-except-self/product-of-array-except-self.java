@@ -22,6 +22,7 @@ class Solution {
 
 
 
+
         
         
 
@@ -30,3 +31,25 @@ class Solution {
         
     }
 }
+/* 
+ 
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+
+        int = nums.length;
+        int[] result = new int[n];
+
+        int prefix = 1 ; 
+        int sufix = 1 ;
+
+        for(int i = 0 ; i<n ; i++){
+
+            result[i]*=prefix;
+            prefix*=nums[i];
+
+            result[n-1-i]*=sufix;
+            sufix*=nums[n-1-i];
+        }
+
+    }
+}    */
